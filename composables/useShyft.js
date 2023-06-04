@@ -134,11 +134,11 @@ export const useShyft = () => {
 			console.log("RED: ",config.public.network)
 			formdata.append("network", "devnet");
 			formdata.append("creator_wallet", address.value);
-			formdata.append("name", "papaya");
-			formdata.append("symbol", "P2");
-			formdata.append("description", "papita");
+			formdata.append("name", data.name);
+			formdata.append("symbol", data.symbol);
+			formdata.append("description", data.description);
 			formdata.append("attributes", "[ {    \"trait_type\": \"taste\",    \"value\": \"wow\"  }]");
-			formdata.append("external_url", "https://www.youtube.com/watch?v=wAjHQXrIj9o");
+			formdata.append("external_url", data.external_url);
 			formdata.append("max_supply", "1");
 			formdata.append("royalty", "5");
 			formdata.append("fee_payer", address.value);
